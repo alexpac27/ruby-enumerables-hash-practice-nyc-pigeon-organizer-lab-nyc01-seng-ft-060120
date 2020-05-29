@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
         end
         # Now that we have final_hash = { "Theo" => {} }, we want to see if the key in the previously empty hash exists.
         #If the final_hash[pigeon][key] does not exist...(i.e, :color, :gender, :lives)
-        if !final_hash[pigeon][key] #Could also be written as "if final_hash[pigeon][key] || = {} " and line 20 would not be needed or the if/end.
+        if !final_hash[pigeon][key] #Could also be written as "if final_hash[pigeon][key] || = [] " and line 26 would not be needed or the if/end.
            #Create final_hash[pigeon][key] and set it to an empty array.
            final_hash[pigeon][key] = []
         end
