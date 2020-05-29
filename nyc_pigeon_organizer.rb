@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
       names.each do |pigeon|
         #We need to check if the final_hash[pigeon] exists bc if it doesn't it will return a nil since we are
         #not assigning it a value. Here, we are saying, if final_hash[pigeon] is false...
-        if !final_hash[pigeon]  #Could also be written as "if "
+        if !final_hash[pigeon] #Could also be written as "if final_hash[pigeon] || = {} " and line 20 would not be needed or the if/end.
            #create an empty hash as the value for the key 'pigeon'
            final_hash[pigeon] = {}
         end
